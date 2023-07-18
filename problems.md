@@ -1,0 +1,1 @@
+I am a new Tech Lead in a company which operates over the Spotify organization model (Squads, Chapters, and Matrices). I will operate within a team of Tech Leads. What should I focus on for the first 30 days?
