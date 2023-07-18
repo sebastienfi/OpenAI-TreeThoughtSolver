@@ -2,6 +2,8 @@
 
 The OpenAI Tree-Based Problem Solver is an open-source project that leverages the power of OpenAI's language models to solve problems presented in a structured format. The program uses a chained prompt technique and tree-based thought process to iteratively refine solutions to complex problems. The idea was inspired by a YouTube video and has been developed into a functional tool.
 
+![Process](./assets/OpenAI-TreeThoughtSolver.png)
+
 ## System Requirements
 Before getting started, ensure you have the following:
 
