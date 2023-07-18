@@ -2,3 +2,4 @@
 results/*.md
 solution_*.md
 debug.txt
+.env

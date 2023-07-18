@@ -4,6 +4,14 @@ import time
 import logging
 import argparse
 import streamlit as st
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Set the OpenAI API keys
+api_key = os.getenv('OPENAI_API_KEY')
+
+is_debug = os.getenv('DEBUG')
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -27,15 +35,13 @@ def save_file(filepath, content, mode='w'):
 
 def save_debug(content):
     try:
-        save_file('debug.txt', content, 'a')
+        if is_debug==True:
+            save_file('debug.txt', content, 'a')
     except IOError as e:
         logging.error(f'Error writing to file {filepath}: {e}')
 
 
-# Set the OpenAI API keys by reading them from files
-api_key = open_file('openai_apikey.md')
-
-page_title = '# Chain Prompt + Tree of Thoughts 🎈'
+page_title = '# OpenAI Tree Thought Solver 🎈'
 
 st.set_page_config(page_title=page_title, page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items=None)
 
